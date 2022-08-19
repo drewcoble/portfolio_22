@@ -1,0 +1,372 @@
+
+
+  .home-hero {
+    background: linear-gradient(to left, rgba($black, 0.15) 50px, rgba($black, 1) 600px), url(../images/dc_pics/IMG_2056\ Large.png);
+    background-size: contain;
+    background-position: bottom 0 right 0;
+    background-repeat: no-repeat;
+    background-blend-mode:normal;
+    color: $white;
+    padding-inline: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 80px;
+
+    .main-headline {
+      line-height: 60px;
+    }
+    .main-subheadline {
+      font-size: 60px;
+      font-family: $font-zilla-slab;
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+
+  .about-me-section {
+    background-color: $dark-green;
+
+    .characteristics-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      // background-color: saddlebrown;
+
+      .char-div {
+        background-color: rgba($white, 0.05);
+        border-radius: 4px;
+        // border: solid $black 2px;
+        margin: 15px;
+        flex-basis: calc(50% - 30px);
+        min-width: 270px;
+        padding: 30px;
+      }
+    }
+  }
+
+  .skills-section {
+    background-color: $black;
+
+    .section-details {
+      margin: 15px auto;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: space-evenly;
+      margin-block: 30px;
+
+      .skill-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba($white, 0.05);
+        border-radius: 4px;
+        text-align: center;
+        // border: solid $black 2px;
+        margin: 15px;
+        flex-basis: calc(33% - 30px);
+        // min-width: 300px;
+        padding: 30px;
+      }
+    }
+
+    
+  }
+
+  .my-work-section {
+    background-color: $dark-green;
+
+    .projects-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+
+      .project-card {
+        min-width: 300px;
+        min-height: 400px;
+        background-color: rgba($white, 0.05);
+        border-radius: 4px;
+        margin: 15px;
+        padding: 0;
+        flex-basis: calc(33% - 30px);
+        transition: all ease-in-out 0.2s 0s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        .project-image {
+          width: 100%;
+          height: 50%;
+          border-radius: 4px 4px 0 0;
+        
+
+        &#cvr-indy {
+          background: linear-gradient(to bottom, rgba($dark-green, 0.2), rgba($dark-green, 0.6)), url(../images/projects/cvr-indy.png);
+          background-position: top;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        &#wax-draft {
+          background: linear-gradient(to bottom, rgba($dark-green, 0.2), rgba($dark-green, 0.6)), url(../images/projects/waxdraft21.png);
+          background-position: top;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        &#jungle-cook {
+          background: linear-gradient(to bottom, rgba($dark-green, 0.2), rgba($dark-green, 0.6)), url(../images/projects/junglecook.png);
+          background-position: top;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        &#heat-check {
+          background: linear-gradient(to bottom, rgba($dark-green, 0.2), rgba($dark-green, 0.6)), url(../images/projects/heatcheck.png);
+          background-position: top;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        &#travel-fly {
+          background: linear-gradient(to bottom, rgba($dark-green, 0.2), rgba($dark-green, 0.6)), url(../images/projects/travelfly.png);
+          background-position: top;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        &#jk-lol {
+          background: linear-gradient(to bottom, rgba($dark-green, 0.2), rgba($dark-green, 0.6)), url(../images/projects/jklol.png);
+          background-position: top;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+        }
+        .project-info {
+          padding: 30px;
+
+          .card-cta {
+            text-decoration: underline;
+            text-align: center;
+            margin-top: 20px;
+            // margin-bottom: 20px;
+          }
+          
+        }
+      }
+    }
+  }
+
+  .contact-me-section {
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+
+    .contact-info-wrapper {
+      display: flex;
+      flex-direction: row;
+      .contact-info{
+        a {
+          color: $white;
+          text-decoration: none;
+        }
+      }
+    }
+
+  }
+
+  .logo-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    padding: 100px;
+
+    .dc-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 150px;
+      height: 150px;
+      background: linear-gradient(to right, $black, $dark-green);
+
+      h1 {
+        font-family: $font-zilla-slab;
+        margin: 0;
+      }
+    }
+  }
+
+@media (max-width: 551px) {
+
+  .home-hero {
+    background: linear-gradient(to left, rgba($black, 0.65) 50px, rgba($black, 0.9) 600px), url(../images/dc_pics/IMG_2056\ Large.png);
+    background-size: cover;
+    background-position: bottom 100% right 80%;
+    background-repeat: no-repeat;
+    background-blend-mode: normal;
+    color: $white;
+    padding-inline: 70px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+  
+    .main-headline {
+      line-height: 70px;
+    }
+  
+    .main-subheadline {
+      font-size: 60px;
+      line-height: 55px;
+      font-family: $font-zilla-slab;
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
+
+  .about-me-section {
+    background-color: $dark-green;
+    
+      .characteristics-container {
+        display: flex;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        // background-color: saddlebrown;
+    
+        .char-div {
+          // width: calc(100% - 20px);
+          background-color: rgba($white, 0.075);
+          border-radius: 4px;
+          // border: solid $black 2px;
+          margin: 15px;
+          // flex-basis: calc(50% - 30px);
+          // min-width: 300px;
+          padding: 30px;
+        }
+      }
+  }
+
+  .skills-section {
+    background-color: $black;
+    
+      .section-details {
+        margin: 15px auto;
+        padding-inline: 15px;
+        max-width: 800px;
+        text-align: left;
+      }
+    
+      .skills-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-block: 30px;
+    
+        .skill-div {
+          background-color: rgba($white, 0.075);
+          border-radius: 4px;
+          text-align: center;
+          // border: solid $black 2px;
+          margin: 15px;
+          // flex-basis: calc(33% - 30px);
+          min-width: 300px;
+          padding: 30px;
+        }
+      }
+  }
+
+    .my-work-section {
+      background-color: $dark-green;
+  
+      .projects-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+  
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+  
+        .project-card {
+          min-width: 300px;
+          min-height: 400px;
+          background-color: rgba($white, 0.075);
+          border-radius: 4px;
+          margin: 15px;
+          padding: 0;
+          // flex-basis: calc(33% - 30px);
+          transition: all ease-in-out 0.2s 0s;
+  
+          &:hover {
+            transform: scale(1.05);
+          }
+          
+          .project-image {
+            min-height: 200px;
+          }
+  
+          .project-info {
+            padding: 30px;
+  
+            .card-cta {
+              text-decoration: underline;
+              text-align: center;
+              margin-top: 20px;
+              // margin-bottom: 20px;
+            }
+  
+          }
+        }
+      }
+    }
+
+  .contact-me-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+  
+    .contact-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .contact-space {
+          display: none;
+        }
+    
+        .contact-info {
+          line-height: 25px;
+          a {
+            color: $white;
+            text-decoration: none;
+          }
+        }
+      }
+  }
+
+}

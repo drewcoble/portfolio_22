@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drew Coble | Full-Stack Developer</title>
+    <link rel="shortcut icon" href="images/dc2.png" type="image/x-icon">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.5.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.5.0/firebase-firestore.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+
+    <script defer src="/__/firebase/init.js"></script><link rel="stylesheet" href="https://use.typekit.net/alw5rfe.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&family=Zilla+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <nav>
+      
+      <div class="nav-left">
+          <h3>Hire&nbsp;Me:</h3>
+          <a href="images/Drew Coble - resume.pdf" target="_blank">
+            <div class="nav-link" id="resume">Résumé</div>
+          </a>
+          <a href="https://www.linkedin.com/in/drew-coble/" target="_blank">
+            <div class="nav-link" id="linkedin">LinkedIn</div>
+          </a>
+      </div>
+      <!-- <div class="nav-right">
+        <h1>Hire Me</h1>
+      </div> -->
+    </nav>
+
+    <div class="main">
+      <div class="section-normal home-hero">
+        <h1 class="main-headline">Drew Coble</h1>
+        <h2 class="main-subheadline">Full-Stack Developer</h2>
+      </div>
+
+      <div id="about-me-section" class="section-normal about-me-section">
+        <h3 class="section-headline">About Me</h3>
+        <div class="characteristics-container">
+          <div class="char-div">
+            <h5>I am a problem solver.</h5>
+            <p>
+              Modern websites and applications often have complicated problems. 
+              I am an excellent critical thinker with the creativity required to think 
+              outside the box and find solutions to these problems.
+            </p>
+          </div>
+          <div class="char-div">
+            <h5>I am an honest person.</h5>
+            <p>
+              I take pride in telling the truth in every situation.
+              My "yes" means yes, and my "no" means no.
+              I believe honesty and transparency are important to building 
+              healthy, lasting relationships in the workplace.
+            </p>
+          </div>
+          <div class="char-div">
+            <h5>I am a hard worker.</h5>
+            <p>
+              I take my work seriously, and I enjoy delivering results. 
+              I sleep well at night, knowing I put in a solid day's work.
+              I consider it a privilege to be able to build websites and apps for a living,
+              and I don't take that for granted.
+            </p>
+          </div>
+          <div class="char-div">
+            <h5>I am a morale booster.</h5>
+            <p>
+              I believe there is room for fun in the workplace. I have a laid-back 
+              demeanor, and I usually have a smile on my face. 
+              Don't let that fool you.
+              I know work comes first and will always make sure my job is done.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills-section" class="section-normal skills-section">
+        <h3 class="section-headline">My Skills</h3>
+        <div class="section-details">
+          I have the capability to take a design and turn it into a 
+          dynamic, responsive, and interactive website, from back-end to front-end.
+          <br><br>
+          If there is a tool I don't already know how to use, I will pick it up quickly.
+          I am an efficient learner, with on-the-job experience adding a new
+          coding language to my repertoire in order to complete a job for a client.
+        </div>
+        <div class="skills-container">
+          <div class="skill-div">PHP</div>
+          <div class="skill-div">MySQL</div>
+          <div class="skill-div">MVC, OOP</div>
+
+          
+          <div class="skill-div">JavaScript, jQuery</div>
+          <div class="skill-div">CSS, SASS</div>
+          <div class="skill-div">D3.js</div>
+
+          <div class="skill-div">React, Angular, Vue</div>
+          <div class="skill-div">React Native, Ionic</div>
+          <div class="skill-div">NoSQL</div>
+          
+          <div class="skill-div">Building & consuming API's</div>
+          <div class="skill-div">WordPress custom themes</div>
+          <div class="skill-div">Shopify Liquid</div>
+        </div>
+      </div>
+
+      <div class="section-normal my-work-section">
+
+        <h3 class="section-headline">My Work</h3>
+        <!-- <a href="https://in-info-web4.informatics.iupui.edu/~ancoble/N413/wax_tourney/" target="_blank" class="project-card" id="wax-tourney">
+                <h1>Wax Tourney</h1>
+                <p>Built with PHP, MySQL, and CodeIgniter.</p>
+                <p>(Designed for Mobile)</p>
+              </a> -->
+      
+        <div class="projects-container">
+          <a href="https://www.cvrindy.com/" target="_blank" class="project-card">
+            <div class="project-image" id="cvr-indy"></div>
+            <div class="project-info">
+              <h4>CVR</h4>
+              <p>Interactive site built with JavaScript, Twig/PHP, & SASS - Fully Responsive</p>
+              <p class="card-cta">Click to Visit</p>
+            </div>
+          </a>
+        
+          <a href="https://waxdraft.firebaseapp.com/" target="_blank" class="project-card">
+            <div class="project-image" id="wax-draft"></div>
+            <div class="project-info">
+              <h4>Wax Draft 21</h4>
+              <p>PWA built with Ionic, Angular, TypeScript, firebase, HTML, & SCSS - Designed for Mobile</p>
+              <p class="card-cta">Click to Visit</p>
+            </div>
+          </a>
+        
+          <a href="https://jungle-cook-dc.firebaseapp.com/" target="_blank" class="project-card">
+            <div class="project-image" id="jungle-cook"></div>
+            <div class="project-info">
+              <h4>Jungle Cook</h4>
+              <p>Recipe site built with jQuery, SCSS, & firebase - Designed for Desktop</p>
+              <p class="card-cta">Click to Visit</p>
+            </div>
+          </a>
+        
+          <a href="https://drewcoble.github.io/N328_Final/" target="_blank" class="project-card" id="heat-check">
+            <div class="project-image" id="heat-check"></div>
+            <div class="project-info">
+              <h4>Heat Check</h4>
+              <p>Data visualization built with D3.js, HTML, & CSS - Designed for Desktop</p>
+              <p class="card-cta">Click to Visit</p>
+            </div>
+          </a>
+        
+          <!-- <a href="https://in-info-web4.informatics.iupui.edu/~ancoble/BudgetBoi/home" target="_blank" class="project-card"
+                  id="budget-boi">
+                  <h1>BudgetBoi</h1>
+                  <p>Budgeting app built with Ionic, Angular, TypeScript, firebase & SCSS.</p>
+                  <p>(Designed for Mobile)</p>
+                </a> -->
+        
+          <a href="https://drewcoble.github.io/n215coursework/travelfly-final/index.html" target="_blank" class="project-card">
+            <div class="project-image" id="travel-fly"></div>
+            <div class="project-info">
+              <h4>Travel-Fly</h4>
+              <p>Travel booking site made with jQuery & SCSS - Fully Responsive</p>
+              <p class="card-cta">Click to Visit</p>
+            </div>
+          </a>
+        
+          <a href="https://jk-lol.web.app/" target="_blank" class="project-card" id="jk-lol">
+            <div class="project-image" id="jk-lol"></div>
+            <div class="project-info">
+              <h4>JK LOL</h4>
+              <p>Joke database made with jQuery and firebase - Designed for Mobile</p>
+              <p class="card-cta">Click to Visit</p>
+            </div>
+          </a>
+        
+          <!-- <a href="https://in-info-web4.informatics.iupui.edu/~ancoble/N423/weather_data/" target="_blank" class="project-card" id="windyman">
+                  <h1>Windyman Weather</h1>
+                  <p>Simple weather site utilizing weather API.</p>
+                  <p>(Not responsive)</p>
+                </a> -->
+        </div>
+      </div>
+
+
+      <div class="section-short contact-me-section">
+          <div>&copy; 2022 - Drew Coble</div>
+          <div class="mobile-only" style="height: 2px; width: calc(100% - 30px); border-radius: 4px; margin-block: 15px; background-color: rgba(255,255,255,0.25);"></div>
+          <div class="contact-info-wrapper">
+            <div class="contact-info"><strong>Email:</strong>&nbsp;<a href="mailto:coble.dev@gmail.com">coble.dev@gmail.com</a></div>
+            <div class="contact-space">&nbsp;|&nbsp;</div>
+            <div class="contact-info"><strong>Phone:</strong>&nbsp;<a href="tel:3177491989">(317) 749-1989</a></div>
+          </div>
+      </div>
+
+      <!-- <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="logo-wrapper">
+        <div class="dc-logo">
+          <h1>DC</h1>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br> -->
+
+
+    </div>
+
+
+    
+    
+
+    <script src="app/app.js">
+      
+    </script>
+  </body>
+</html>
+
